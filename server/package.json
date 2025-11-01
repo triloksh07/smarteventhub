@@ -1,0 +1,32 @@
+{
+  "name": "smart-event-hub-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "lint": "echo 'No linter configured'",
+    "typecheck": "echo 'No typecheck for JS'"
+  },
+  "dependencies": {
+    "resend": "*",
+    "bcryptjs": "*",
+    "connect-mongo": "*",
+    "cors": "*",
+    "dotenv": "*",
+    "express": "*",
+    "express-session": "*",
+    "helmet": "*",
+    "json2csv": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "multer": "*",
+    "nanoid": "*",
+    "node-cron": "*",
+    "pdfkit": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
