@@ -1,0 +1,31 @@
+services:
+  # Backend API Service
+  - type: web
+    name: smarteventhub-api
+    runtime: node
+    region: oregon
+    plan: free
+    
+    # Build settings
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    
+    # Root directory is the repo root
+    rootDir: .
+    
+    # Environment variables
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
