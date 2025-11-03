@@ -10,4 +10,8 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: false,
   },
+  optimizeDeps: {
+  include: ['@mui/material', '@mui/system', '@emotion/react', '@emotion/styled'],
+},
+
 })
